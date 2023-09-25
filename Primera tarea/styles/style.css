@@ -17,7 +17,6 @@ body{
 header {
 	display: inline-block;
 	display: flex;
-	border: black 1px;
 	margin: 1px;
 }
 
@@ -33,21 +32,16 @@ header {
 
 header nav {
 	padding: 10px;
-	border: black 1px;
 	width:fit-content;
 }
 
-header ul {
+nav ul {
 	list-style-type: none;
 	display: flex;
 	margin: 0;
-	border: black solid 1px;
 }
 
 nav li {
-	background: linear-gradient(blue, red );
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	margin: 0;
 	padding: 10px;
 }
@@ -62,13 +56,51 @@ main {
 	display: flex;
 }
 
-.content {
+.custom-select {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+
+.option {
+	padding: 0 30px 0 30px;
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+	background: #ccc;
+	position: absolute;
+	pointer-events: none;
+	order: 2;
+	z-index: 1;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.option:hover {
+	background: #5d5c63;
+}
+
+.option-select {
+	
+}
+
+.custom-select .option {
+	position: relative;
+	pointer-events: all;
+}
+
+.all {
 	width: 70%;
 	display: block;
 }
 
-.content section {
+.all section {
+	border: 1px solid #ccc;
+	border-radius: 5px;
 	background-color: aliceblue;
+	width: 100%;
+	display: inline-block;
 }
 
 .titulo {
@@ -78,13 +110,15 @@ main {
 
 a {
 	color: #00babc;
-	background-color: black;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 10px;
 }
 
-li {
-	margin: 10px;
+li:hover {
+	background-color:rgb(169, 236, 233) ;
+}
+
+section li {
+	padding: 10px;
 	list-style-type: none;
 }

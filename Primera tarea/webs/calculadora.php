@@ -3,13 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
 	<title>Calculadora</title>
 </head>
 <body>
 	<header>
 		<div id="presentacion">
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil ut ipsam fugiat, nostrum, voluptate sunt aut repellat, doloribus inventore laboriosam ex ipsa ratione? Maxime aliquid esse nostrum dolor alias sit.</p>
 		</div>
 		<div id="navegacion">
 			<nav>
@@ -21,17 +20,22 @@
 		</div>
 	</header>
 	<main>
-		<div class="content">
+		<div class="all">
 			<h1 class="titulo">Calculadora</h1>
 			<section>
 				<form action="../code/calculadora_code.php" method="post">
-					<div id="desplegable">
-						<select name="operacion" id="operacion">
-							<option value="Suma">Suma</option>
-							<option value="Resta">Resta</option>
-							<option value="Multiplicacion">Multiplicaion</option>
-							<option value="Division">Division</option>
-						</select>
+					<div class="custom-select">
+						<input type="radio" class="option-select" name="operacion" id="Suma" checked>
+						<label for="Suma" class="option">Sumar</label>
+
+						<input type="radio" class="option-select" name="operacion" id="Resta" checked>
+						<label for="Resta" class="option">Restar</label>
+						
+						<input type="radio" class="option-select" name="operacion" id="Multiplicacion" checked>
+						<label for="Multiplicacion" class="option">Multiplicar</label>
+						
+						<input type="radio" class="option-select" name="operacion" id="Division" checked>
+						<label for="Division" class="option">Dividir</label>
 					</div>
 					<div id="INPUTS">
 						<label for="number1">NUMBER 1</label>
