@@ -15,7 +15,7 @@
 				$resultado = ((int)$_POST["number1"]/(int)$_POST["number2"]);
 				break;
 		}
-		header("Location: ../../WEBS/Calculadora.php?mensaje=". urlencode($resultado));
+		header("Location: ../webs/calculadora.php?mensaje=". urlencode($resultado));
 		exit;
 	}
 ?>
