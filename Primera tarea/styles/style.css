@@ -56,56 +56,80 @@ main {
 	display: flex;
 }
 
-.custom-select {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-
-
-.option {
-	padding: 0 30px 0 30px;
-	min-height: 40px;
-	display: flex;
-	align-items: center;
-	background: #ccc;
-	position: absolute;
-	pointer-events: none;
-	order: 2;
-	z-index: 1;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
-.option:hover {
-	background: #5d5c63;
-}
-
-.option-select {
-	
-}
-
-.custom-select .option {
-	position: relative;
-	pointer-events: all;
-}
-
 .all {
 	width: 70%;
 	display: block;
+}
+
+.titulo {
+	padding: 10px;
+	text-align: center;
 }
 
 .all section {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	background-color: aliceblue;
+	padding: 10px;
 	width: 100%;
-	display: inline-block;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
 }
 
-.titulo {
+form {
+	display: inline-block;
+	width:fit-content;
+	border: 1px solid black;
+}
+
+.inputs {
+	padding: 5px;
+	display: flex;
+	align-content: center;
+}
+
+.nums {
+	width: fit-content;
 	padding: 10px;
-	text-align: center;
+	display: block;
+	justify-content: center;
+}
+
+.input_num {
+	display: block;
+	margin: 5px;
+	padding: 5px;
+}
+
+.custom-select {
+	align-items: center;
+	padding: 10px;
+	width: 50%;
+}
+
+.custom-select label {
+	width: 100%;
+	padding: 2px;
+	display: block;
+	margin: 5px;
+}
+
+.option-select:checked + label {
+	background-color: #00babc;
+}
+
+.custom-select input {
+	display: none;
+}
+
+.buttom {
+	padding: 10px;
+}
+
+#SUBMIT_BUTTOM {
+	padding: 5px;
+	width: 100%;
 }
 
 a {

@@ -24,27 +24,27 @@
 			<h1 class="titulo">Calculadora</h1>
 			<section>
 				<form action="../code/calculadora_code.php" method="post">
-					<div class="custom-select">
-						<input type="radio" class="option-select" name="operacion" id="Suma" checked>
-						<label for="Suma" class="option">Sumar</label>
-
-						<input type="radio" class="option-select" name="operacion" id="Resta" checked>
-						<label for="Resta" class="option">Restar</label>
-						
-						<input type="radio" class="option-select" name="operacion" id="Multiplicacion" checked>
-						<label for="Multiplicacion" class="option">Multiplicar</label>
-						
-						<input type="radio" class="option-select" name="operacion" id="Division" checked>
-						<label for="Division" class="option">Dividir</label>
+					<div class="inputs">
+						<div class="nums">
+							<input type="text" name="number1" id="number1" class="input_num" placeholder="NUMBER 1">
+							<input type="text" name="number2" id="number2" class="input_num" placeholder="NUMBER 2">
+						</div>
+						<div class="custom-select">
+							<input type="radio" class="option-select" name="operacion" id="Suma" value="Suma" checked>
+							<label for="Suma" class="option">Sumar</label>
+							
+							<input type="radio" class="option-select" name="operacion" id="Resta" value="Resta" checked>
+							<label for="Resta" class="option">Restar</label>
+							
+							<input type="radio" class="option-select" name="operacion" id="Multiplicacion" value="Multiplicacion" checked>
+							<label for="Multiplicacion" class="option">Multiplicar</label>
+							
+							<input type="radio" class="option-select" name="operacion" id="Division" value="Division" checked>
+							<label for="Division" class="option">Dividir</label>
+						</div>
 					</div>
-					<div id="INPUTS">
-						<label for="number1">NUMBER 1</label>
-						<input type="text" name="number1" id="number1">
-						<label for="number2">NUMBER 2</label>
-						<input type="text" name="number2" id="number2">
-					</div>
-					<div id="SUBMIT_BUTTOM">
-						<input type="submit" value="Calcular"></input>
+					<div class="buttom">
+						<input type="submit" value="Calcular" id="SUBMIT_BUTTOM"></input>
 					</div>
 					<?php 
 						if (isset($_GET['mensaje']))
