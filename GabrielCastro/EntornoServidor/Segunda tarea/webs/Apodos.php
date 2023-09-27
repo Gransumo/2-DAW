@@ -26,24 +26,22 @@
 		<div class="all">
 			<h1 class="titulo">APODOS</h1>
 			<section>
-				<form id="form" action="../code/apodos_code.php" method="post">
+				<form id="form" action="../code/apodos_code.php" method="post" onsubmit="changeURL()">
 					<div class="text_inputs">
-						<input type="text" class="input_txt" name="Nombre" placeholder="Nombre" required>
+						<input type="text" class="input_txt" name="nombre" placeholder="Nombre" required>
 						<input type="email" class="input_txt" name="correo" placeholder="Correo" required>
 						<input type="text" class="input_txt" id="apodo" placeholder="Apodo">
 					</div>
 					<div class="buttom">
-						<input type="submit" value="Enviar" id="SUBMIT_BUTTOM" onclick="get(apodo)">
+						<input type="submit" value="Enviar" id="SUBMIT_BUTTOM">
 					</div>
 				</form>
 				<script>
 					function changeURL(){
 						var apodo = document.getElementById("apodo").value;
 						var newURL = "../code/apodos_code.php?apodo=" + apodo;
-						document.getElementById("form").action = newURL;
-						document.getElementById("form").sumbit();
+						document.querySelector("form").action = newURL;
 					}
-					changeURL();
 				</script>
 			</section>
 		</div>
