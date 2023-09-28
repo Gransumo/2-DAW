@@ -18,6 +18,8 @@
 					<li><a href="./Nombres.php">Nombres</a></li>
 					<li><a href="./Correo.php">Correo</a></li>
 					<li><a href="./Apodos.php">Apodos</a></li>
+					<li><a href="./Contador.php">Contador</a></li>
+					<li><a href="./Color.php">Color</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -51,7 +53,7 @@
 					</div>
 					<?php 
 						if (isset($_GET['mensaje']))
-						echo "<p>El resultado es {$_GET['mensaje']}</p><br>";
+							echo "<p>El resultado es {$_GET['mensaje']}</p><br>";
 					?>
 				</form>
 			</section>
