@@ -13,6 +13,12 @@ function factorial(numero){
 	return resultado;
 }
 
+function is_even(n) {
+	if (isNaN(n))
+		throw new is_not_digit("IS_NOT_A_DIGIT");
+	return (n % 2 === 0 ? "The number is even" : "The number is odd");
+}
+
 function is_uppercase(string) {
 	var control;
 	

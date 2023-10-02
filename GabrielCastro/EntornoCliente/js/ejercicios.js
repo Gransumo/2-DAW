@@ -2,9 +2,8 @@
 function ex1() {
 	let n = parseFloat(prompt("Give a number:"));
 	try {
-		if (isNaN(n))
-			throw new is_not_digit("IS_NOT_A_DIGIT");
-		alert(n % 2 === 0 ? "The number is even" : "The number is odd");
+		var mensaje = is_even(n);
+		alert (mensaje);
 	} catch (error) {
 		if (error instanceof is_not_digit)
 			alert("Hola");
@@ -14,7 +13,8 @@ function ex1() {
 function ex2() {
 	let s = prompt("Give me some text.");
 	try {
-		alert(is_uppercase(s));
+		var mensaje = is_uppercase(s);
+		alert(mensaje);
 	} catch (error) {
 		if (error instanceof is_not_alpha)
 			alert(error.mensaje);
@@ -24,7 +24,8 @@ function ex2() {
 function ex3() {
 	let s = prompt("Give me some text and i will say you if the text is a palindrome");
 	try {
-		alert (is_pal(s));
+		var mensaje = is_pal(s);
+		alert (mensaje);
 	} catch (error) {
 		if (error instanceof empty_string)
 			alert (error.mensaje);
