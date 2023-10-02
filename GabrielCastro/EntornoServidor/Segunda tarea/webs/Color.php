@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../styles/style.css">
 	<title>Contador</title>
 	<?php
-		echo "<style> section {background-color: ". $_COOKIE['color'] ."};</style>";
+		if (isset($_COOKIE['color']))
+			echo "<style> section {background-color: ". $_COOKIE['color'] ."};</style>";
 	?>
 </head>
 <body>

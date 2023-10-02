@@ -85,20 +85,16 @@ form {
 }
 
 .inputs {
-	padding: 5px;
+	padding: 10px;
 	display: flex;
 	align-content: center;
 }
 
-.text_inputs{
+.text_inputs .input_color{
 	width: fit-content;
 	padding: 10px;                   
 	display: block;
 	justify-content: center;
-}
-
-.input_color {
-	margin: 10px;
 }
 
 .input_txt {
