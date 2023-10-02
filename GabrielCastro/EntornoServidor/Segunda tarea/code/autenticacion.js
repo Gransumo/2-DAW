@@ -1,3 +1,17 @@
+
+function getCookie(name) {
+	if (document.cookie.indexOf(name + "=") == -1)
+		return (-1);
+	var cookies = document.cookie.valueOf(name).split(";");
+	for (var i = 0; i < cookies.length; i++) {
+		if(cookies[i].slice(0, name.length + 2).trim(' ').localeCompare(name + "=") === 0)
+		{
+			var userCookie = cookies[i].slice(name.length + 2);
+			return (userCookie);
+		}
+	}
+}
+
 function init_autentication() {
 	var content = document.getElementById("seccion");
 
@@ -5,7 +19,7 @@ function init_autentication() {
 		content.innerHTML = `
 			<form action="../code/autenticacion_code.php" method="post">
 			<div class="content">
-				<?php echo "<p>Hola " . $_COOKIE['user'] . ", has iniciado sesion</p>"; ?>
+				<p>Hola ` + getCookie("user") + `, has iniciado sesion</p>
 			</div>
 			<div class="buttom">
 				<input type="submit" value="Cerrar Sesion" id="SUBMIT_BUTTOM" name="cerrar_sesion">
