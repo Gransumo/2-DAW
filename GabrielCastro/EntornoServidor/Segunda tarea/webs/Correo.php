@@ -20,6 +20,7 @@
 					<li><a href="./Apodos.php">Apodos</a></li>
 					<li><a href="./Contador.php">Contador</a></li>
 					<li><a href="./Color.php">Color</a></li>
+					<li><a href="./Autenticacion.php">Autenticacion</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -27,7 +28,7 @@
 	<main>
 		<div class="all">
 			<h1 class="titulo">CORREO</h1>
-			<section>
+			<section class="seccion">
 				<form action="../code/correo_code.php" method="post">
 					<div class="text_inputs">
 						<input type="text" name="nombre" class="input_txt" placeholder="Nombre">

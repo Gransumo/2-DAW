@@ -20,6 +20,7 @@
 					<li><a href="./Apodos.php">Apodos</a></li>
 					<li><a href="./Contador.php">Contador</a></li>
 					<li><a href="./Color.php">Color</a></li>
+					<li><a href="./Autenticacion.php">Autenticacion</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -27,7 +28,7 @@
 	<main>
 		<div class="all">
 			<h1 class="titulo">CALCULADORA</h1>
-			<section>
+			<section class="seccion">
 				<form action="../code/calculadora_code.php" method="post">
 					<div class="inputs">
 						<div class="text_inputs">

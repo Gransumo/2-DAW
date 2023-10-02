@@ -20,6 +20,7 @@
 					<li><a href="./Apodos.php">Apodos</a></li>
 					<li><a href="./Contador.php">Contador</a></li>
 					<li><a href="./Color.php">Color</a></li>
+					<li><a href="./Autenticacion.php">Autenticacion</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -27,7 +28,7 @@
 	<main>
 		<div class="all">
 			<h1 class="titulo">SESION</h1>
-			<section>
+			<section class="seccion">
 				<ul>
 					<a href="../code/sesion_code.php?opcion=acceso"><li>Acceso</li></a>
 					<a href="../code/sesion_code.php?opcion=configuracion"><li>Configuracion</li></a>
