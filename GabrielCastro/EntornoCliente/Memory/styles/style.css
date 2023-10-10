@@ -119,7 +119,7 @@ main {
 .grid {
 	display: grid;
 	width: fit-content;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .cell {

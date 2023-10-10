@@ -1,22 +1,22 @@
 const imagenes = {
-	JAVA: "../../img/java.jpg",
-	JAVASCRIPT: "../../img/JavaScript.jpg",
-	HTML: "../../img/html.jpg",
-	CSS: "../../img/css.jpg",
-	PHP: "../../img/php.jpg",
-	GITHUB: "../../img/github.jpg",
-	WORKBENCH: "../../img/workbench.jpg",
-	MONGODB: "../../img/mongodb.jpg",
-	C: "../../img/c.jpg",
-	CCC: "../../img/ccc.jpg",
-	CARD: "../../img/C#.jpg",
-	PHYTON: "../../img/phyton.jpg",
-	DOCKER: "../../img/docker.jpg",
-	ANGULAR: "../../img/angular.jpg",
-	REACT: "../../img/react.jpg",
-	SWIFT: "../../img/swift.jpg",
-	AWS: "../../img/aws.jpg",
-	NODE: "../../img/node.jpg",
+	JAVA: "../img/java.jpg",
+	JAVASCRIPT: "../img/js.jpg",
+	HTML: "../img/html.jpg",
+	CSS: "../img/css.jpg",
+	PHP: "../img/php.jpg",
+	GITHUB: "../img/github.jpg",
+	WORKBENCH: "../img/workbench.jpg",
+	MONGODB: "../img/mongodb.jpg",
+	C: "../img/c.jpg",
+	CCC: "../img/ccc.jpg",
+	CARD: "../img/card.jpg",
+	PHYTON: "../img/phyton.jpg",
+	DOCKER: "../img/docker.png",
+	ANGULAR: "../img/angular.jpg",
+	REACT: "../img/react.jpg",
+	SWIFT: "../img/swift.jpg",
+	AWS: "../img/aws.jpg",
+	NODE: "../img/node.jpg",
 };
 
 function get_imgArray(len) {
@@ -29,6 +29,7 @@ function get_imgArray(len) {
 		} while (is_repeat(random_keys, img_key));
 		random_keys.push(img_key);
 	}
+	random_keys = fisher_yates(random_keys.concat(random_keys.slice()))
 	return (random_keys);
 }
 
@@ -37,6 +38,5 @@ function get_gameTiles(len) {
 	var imgs = get_imgArray(len);
 	for (let i = 0; i < imgs.length; i++)
 	gameNodes.push(new tile(imgs[i], imagenes[imgs[i]]));
-	gameNodes = fisher_yates(gameNodes.concat(gameNodes.slice()));
 	return (gameNodes);
 }
