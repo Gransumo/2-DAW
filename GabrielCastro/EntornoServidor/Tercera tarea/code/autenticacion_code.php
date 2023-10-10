@@ -1,4 +1,3 @@
-
 <?php
 	session_start();
 	if (($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST["user"]) && isset($_POST["password"]))
@@ -12,8 +11,4 @@
 	if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["cerrar_sesion"]))
 		setcookie("user", "", time() - 3600, "/");
 	header("Location: ../webs/Autenticacion.php");
-?>
-
-<?php 
-	echo "<p>Hola " . $_COOKIE['user'] . ", has iniciado sesion</p>";
 ?>

@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../styles/style.css">
-	<title>Apodos</title>
+	<title>Verificacion</title>
 </head>
 <body>
-<header>
+	<header>
 		<div id="presentacion">
 		</div>
 		<div id="navegacion">
@@ -22,13 +22,13 @@
 	</header>
 	<main>
 		<div class="all">
-			<h1 class="titulo">APODOS</h1>
+			<h1 class="titulo">VERIFICACIÓN</h1>
 			<section class="seccion">
-				<form id="form" action="../code/apodos_code.php" method="post" onsubmit="changeURL()">
+				<form action="../code/format_code.php" method="post" id="form" onsubmit="changeURL()">
 					<div class="text_inputs">
-						<input type="text" class="input_txt" name="nombre" placeholder="Nombre" required>
-						<input type="email" class="input_txt" name="correo" placeholder="Correo" required>
-						<input type="text" class="input_txt" id="apodo" placeholder="Apodo">
+						<input type="text" name="nombre" id="nombre" class="input_txt" placeholder="Nombre">
+						<input type="text" name="apellido" id="apellido" class="input_txt" placeholder="Apellido">
+						<input type="text" name="ciudad" id="ciudad" class="input_txt" placeholder="Ciudad">
 					</div>
 					<div class="buttom">
 						<input type="submit" value="Enviar" id="SUBMIT_BUTTOM">
@@ -41,6 +41,7 @@
 						document.querySelector("form").action = newURL;
 					}
 				</script>
+				<script src="../code/check_format.js"></script>
 			</section>
 		</div>
 	</main>

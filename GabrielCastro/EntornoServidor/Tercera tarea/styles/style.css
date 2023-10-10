@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+	background: linear-gradient(blue, red );
+	background-repeat: no-repeat;
+	height: 100%;
+	margin: 0;
+	background-attachment: fixed;
+	display: block;
+
+}
+
+header {
+	display: inline-block;
+	display: flex;
+	margin: 1px;
+}
+
+#presentacion {
+	width: 20%;
+}
+
+#navegacion {
+	width: 80%;
+	justify-content: right;
+	display: flex;
+}
+
+header nav {
+	padding: 10px;
+	width:fit-content;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+}
+
+nav li {
+	margin: 0;
+	padding: 10px;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+main {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	height: 100%;
+}
+
+.all {
+	width: 70%;
+	display: block;
+}
+
+.titulo {
+	padding: 10px;
+	text-align: center;
+}
+
+.all section {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	width: 100%;
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.seccion {
+	background-color: aliceblue;
+}
+
+form {
+	display: inline-block;
+	width:fit-content;
+	border: 1px solid black;
+}
+
+.content {
+	margin: 10px;
+}
+
+.inputs {
+	padding: 10px;
+	display: flex;
+	align-content: center;
+}
+
+.text_inputs .input_color{
+	width: fit-content;
+	padding: 10px;                   
+	display: block;
+	justify-content: center;
+}
+
+.input_txt {
+	display: block;
+	margin: 5px;
+	padding: 5px;
+}
+
+.buttom {
+	padding: 10px;
+}
+
+#SUBMIT_BUTTOM {
+	padding: 5px;
+	width: 100%;
+}
+
+section li {
+	padding: 10px;
+	list-style-type: none;
+}
