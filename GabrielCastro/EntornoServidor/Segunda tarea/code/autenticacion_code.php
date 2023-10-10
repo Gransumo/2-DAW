@@ -13,7 +13,3 @@
 		setcookie("user", "", time() - 3600, "/");
 	header("Location: ../webs/Autenticacion.php");
 ?>
-
-<?php 
-	echo "<p>Hola " . $_COOKIE['user'] . ", has iniciado sesion</p>";
-?>

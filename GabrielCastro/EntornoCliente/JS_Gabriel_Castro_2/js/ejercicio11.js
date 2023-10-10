@@ -39,6 +39,6 @@ buttom.addEventListener("click", () =>{
 	else{
 		hideDetails();
 		control = 0;
-		buttom.innerHTML = "Show Details"
+		buttom.innerHTML = "Show Details";
 	}
 });

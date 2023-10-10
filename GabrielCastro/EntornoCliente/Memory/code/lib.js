@@ -29,7 +29,6 @@ function create_node(type, content) {
  * @param {*} nodes Array de nodos que se quieren añadir como hijos
  * @returns Nodo de "type" con los nodos de "nodes" como hijos
  */
-
 function append_nodes(type, nodes) {
 	if (!Array.isArray(nodes))
 		return (null);
@@ -41,3 +40,32 @@ function append_nodes(type, nodes) {
 	}
 	return (node);
 }
+
+function get_nNodes(type, n) {
+	if (!type || n == 0)
+		return (null);
+	var nodes = [];
+	for (let i = 0; i < n; i++) {
+		nodes.push(document.createElement("img"));
+	}
+	return (nodes);
+}
+
+function is_repeat(array, value) {
+	if (array.length === 0)
+		return (false);
+	for (let i = 0; i < array.length; i++) {
+		if (array[i] === value)
+			return(true);
+	}
+	return (false);
+}
+
+function fisher_yates(array) {
+	for (let i = array.length - 1; i > 0; i--) {
+		let j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
+	}
+	return (array);
+}
+
