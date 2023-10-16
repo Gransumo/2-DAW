@@ -3,6 +3,7 @@ var tring = false;
 var fliped;
 var puntaje = 0;
 const blank_src = "/GabrielCastro/EntornoCliente/Memory/img/blanco.jpg";
+const blank = ;
 
 function init_game() {
 	tiles = get_gameTiles(16);
@@ -14,7 +15,10 @@ function init_game() {
 }
 
 function flip(img) {
+	alert(img.src);
+	alert((new URL(img.src)).pathname);
 	if ((new URL(img.src)).pathname === blank_src){
+		alert("hola");	
 		img.src = tiles[parseInt(img.id)].img_src;
 	}
 	else {
@@ -25,6 +29,7 @@ function flip(img) {
 function play(event) {
 	if (tiles[parseInt(event.target.id)].fliped === false) {
 		if (!tring) {
+			
 			flip(event.target);
 			tiles[parseInt(event.target.id)].flip();
 			fliped = event.target;

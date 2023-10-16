@@ -1,0 +1,158 @@
+[
+    {
+        "nombre": "Aspirina",
+        "precio": 5.99,
+        "cantidadStock": 5,
+        "sucursal": "Sucursal A"
+    },
+    {
+        "nombre": "Ibuprofeno",
+        "precio": 7.49,
+        "cantidadStock": 0,
+        "sucursal": "Sucursal B"
+    },
+    {
+        "nombre": "Paracetamol",
+        "precio": 4.25,
+        "cantidadStock": 15,
+        "sucursal": "Sucursal C"
+    },
+    {
+        "nombre": "Amoxicilina",
+        "precio": 12.99,
+        "cantidadStock": 8,
+        "sucursal": "Sucursal A"
+    },
+    {
+        "nombre": "Omeprazol",
+        "precio": 9.75,
+        "cantidadStock": 30,
+        "sucursal": "Sucursal B"
+    },
+    {
+        "nombre": "Loratadina",
+        "precio": 6.99,
+        "cantidadStock": 12,
+        "sucursal": "Sucursal C"
+    },
+    {
+        "nombre": "Vitamina C",
+        "precio": 8.50,
+        "cantidadStock": 0,
+        "sucursal": "Sucursal A"
+    },
+    {
+        "nombre": "Diazepam",
+        "precio": 14.99,
+        "cantidadStock": 7,
+        "sucursal": "Sucursal B"
+    },
+    {
+        "nombre": "Adrenalina",
+        "precio": 10.25,
+        "cantidadStock": 0,
+        "sucursal": "Sucursal C"
+    },
+    {
+        "nombre": "Clorhidrato de Cetirizina",
+        "precio": 6.75,
+        "cantidadStock": 9,
+        "sucursal": "Sucursal A"
+    },
+    {
+        "nombre": "Metronidazol",
+        "precio": 8.99,
+        "cantidadStock": 0,
+        "sucursal": "Sucursal B"
+    },
+    {
+        "nombre": "Furosemida",
+        "precio": 7.25,
+        "cantidadStock": 4,
+        "sucursal": "Sucursal C"
+    },
+    {
+        "nombre": "Insulina",
+        "precio": 18.75,
+        "cantidadStock": 0,
+        "sucursal": "Sucursal A"
+    },
+    {
+        "nombre": "Atorvastatina",
+        "precio": 11.50,
+        "cantidadStock": 14,
+        "sucursal": "Sucursal B"
+    },
+    {
+        "nombre": "Morfina",
+        "precio": 15.99,
+        "cantidadStock": 3,
+        "sucursal": "Sucursal C"
+    },
+    {
+        "nombre": "Ranitidina",
+        "precio": 8.75,
+        "cantidadStock": 6,
+        "sucursal": "Sucursal A"
+    },
+    {
+        "nombre": "Losartán",
+        "precio": 9.50,
+        "cantidadStock": 0,
+        "sucursal": "Sucursal B"
+    },
+    {
+        "nombre": "Prednisona",
+        "precio": 6.25,
+        "cantidadStock": 1,
+        "sucursal": "Sucursal C"
+    },
+    {
+        "nombre": "Hidroclorotiazida",
+        "precio": 7.99,
+        "cantidadStock": 0,
+        "sucursal": "Sucursal A"
+    },
+    {
+        "nombre": "Fenitoína",
+        "precio": 10.99,
+        "cantidadStock": 13,
+        "sucursal": "Sucursal B"
+    },
+    {
+        "nombre": "Warfarina",
+        "precio": 12.50,
+        "cantidadStock": 0,
+        "sucursal": "Sucursal C"
+    },
+    {
+        "nombre": "Digoxina",
+        "precio": 11.25,
+        "cantidadStock": 2,
+        "sucursal": "Sucursal A"
+    },
+    {
+        "nombre": "Sulfato de Zinc",
+        "precio": 4.99,
+        "cantidadStock": 20,
+        "sucursal": "Sucursal B"
+    },
+    {
+        "nombre": "Ácido Fólico",
+        "precio": 3.75,
+        "cantidadStock": 0,
+        "sucursal": "Sucursal C"
+    },
+    {
+        "nombre": "Cefalexina",
+        "precio": 9.25,
+        "cantidadStock": 5,
+        "sucursal": "Sucursal A"
+    },
+    {
+        "nombre": "Levotiroxina",
+        "precio": 7.99,
+        "cantidadStock": 11,
+        "sucursal": "Sucursal B"
+    }
+]
