@@ -69,3 +69,17 @@ function fisher_yates(array) {
 	return (array);
 }
 
+function show_node(node){
+	requestAnimationFrame(() => {
+		node.style.maxHeight = node.scrollHeight + "px";
+	});
+}
+
+function hide_node(node) {
+	requestAnimationFrame(() => {
+		node.style.maxHeight = "0";
+		node.addEventListener("transitionend", () => {
+			node.parentNode.removeChild(node);
+		});
+	});
+}

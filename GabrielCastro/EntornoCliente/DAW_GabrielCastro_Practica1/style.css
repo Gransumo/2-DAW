@@ -116,21 +116,19 @@ main {
 	align-items: center;
 }
 
-.grid {
-	display: grid;
-	width: fit-content;
-    grid-template-columns: repeat(4, 1fr);
+.desplegable {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 500ms ease;
 }
 
-.cell {
-	margin: 0;
-	width: fit-content;
-	text-align: center;
+.ejercicio {
+	width: 100%;
+	padding: 5px;
 }
 
-.cell a img {
-	max-height: 100%;
-	width: auto;
+.ejercicio:hover {
+	background-color: #00babc;
 }
 
 .list_container ul {
