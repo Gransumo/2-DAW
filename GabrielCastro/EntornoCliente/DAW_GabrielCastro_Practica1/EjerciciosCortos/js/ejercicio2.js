@@ -1,4 +1,6 @@
-var a = 20;
-var b = 8;
 
-alert(a + b);
+document.addEventListener("DOMContentLoaded", () => {
+	var a = 20;
+	var b = 8;
+	alert(a * b);
+});
