@@ -122,7 +122,8 @@ main {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 500ms ease;
-	background-color: #ccc;
+	background-color: #aaaaaa48;
+	border-radius: 5px;
 }
 
 .ejercicio {
@@ -130,7 +131,7 @@ main {
 }
 
 .ejercicio:hover {
-	background-color: #00babc;
+	background-color: rgba(50, 131, 212, 0.424);
 }
 
 .tablas {
@@ -151,7 +152,7 @@ main {
 }
 
 .enunciado {
-	background-color: blue;
+	background-color: rgb(59, 50, 233);
 	padding: 10px;
 }
 
@@ -168,4 +169,11 @@ main {
 
 .oculto {
 	display: none;
+}
+.enunciado {
+	border-radius: 5px;
+}
+
+.oculto:checked + label  div{
+	background-color: rgba(50, 131, 212, 0.602);
 }

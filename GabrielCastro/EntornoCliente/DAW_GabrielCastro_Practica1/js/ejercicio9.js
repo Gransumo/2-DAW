@@ -7,7 +7,7 @@ function init() {
 	}
 }
 
-function get_content() {
+function get_buttom() {
 	var boton = create_node("button", "Iniciar");
 	boton.className = "buttom";
 	boton.id = "init_button";
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	var desplegable = null;
 	buttom.addEventListener("click", () => {
 		if (!desplegado) {
-			desplegable = create_node("div", get_content());
+			desplegable = create_node("div", get_buttom());
 			desplegable.className = "desplegable";
 			document.getElementById("ejercicio9").appendChild(desplegable);
 			show_node(desplegable);
