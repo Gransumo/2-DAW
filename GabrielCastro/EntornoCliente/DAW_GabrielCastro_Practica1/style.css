@@ -131,6 +131,23 @@ main {
 	background-color: #00babc;
 }
 
+.tablas {
+	display: flex;
+	justify-content: center;
+}
+
+.tablas div {
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: left;
+	padding: 5px;
+}
+
+.tablas ul {
+	list-style-type: none;
+}
+
 .list_container ul {
 	width: fit-content;
 	list-style-type: disc;
