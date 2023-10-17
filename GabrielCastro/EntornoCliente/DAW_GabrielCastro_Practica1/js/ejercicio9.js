@@ -7,22 +7,28 @@ function init() {
 	}
 }
 
+function get_content() {
+	var boton = create_node("button", "Iniciar");
+	boton.className = "buttom";
+	boton.id = "init_button";
+	var buttom_container = create_node("div", boton);
+	buttom_container.className = "buttom_container";
+	return (buttom_container);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 	var desplegado = false;
 	var buttom = document.getElementById("exe9");
 	var desplegable = null;
 	buttom.addEventListener("click", () => {
 		if (!desplegado) {
-			var boton = create_node("button", "Iniciar");
-			boton.className = "buttom";
-			boton.id = "init_button";
-			var buttom_container = create_node("div", boton);
-			buttom_container.className = "buttom_container";
-			desplegable = create_node("div", buttom_container);
+			desplegable = create_node("div", get_content());
 			desplegable.className = "desplegable";
 			document.getElementById("ejercicio9").appendChild(desplegable);
 			show_node(desplegable);
-			document.getElementById("init_button").addEventListener("click", init());
+			desplegable.addEventListener("transitionend", () => {
+				document.getElementById("init_button").addEventListener("click", init);
+			});
 			desplegado = true;
 		}else{
 			hide_node(desplegable);

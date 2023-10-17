@@ -103,6 +103,8 @@ main {
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 10px;
+	text-align: center;
+	justify-content: center;
 }
 
 .content a {
@@ -120,10 +122,10 @@ main {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 500ms ease;
+	background-color: #ccc;
 }
 
 .ejercicio {
-	width: 100%;
 	padding: 5px;
 }
 
@@ -146,6 +148,11 @@ main {
 
 .tablas ul {
 	list-style-type: none;
+}
+
+.enunciado {
+	background-color: blue;
+	padding: 10px;
 }
 
 .list_container ul {

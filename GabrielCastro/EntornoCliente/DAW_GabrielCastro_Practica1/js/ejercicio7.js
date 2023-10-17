@@ -45,7 +45,7 @@ function average(n) {
 	for (let i = 0; i < n.length; i++) {
 		suma += n[i];
 	}
-	return (suma / 4);
+	return ((suma / 4).toFixed(2));
 }
 
 function getResults(n) {

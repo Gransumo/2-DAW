@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			var n = prompt("Dime un numero del 1-9: ");
 			if (n && !isNaN(n) && n >= 1 && n <= 9) {
 				n = parseInt(n);
-				desplegable = create_node("div", append_nodes("ul", getTable(n)));
+				var tabla_container = create_node("div", create_node ("div", append_nodes("ul", getTable(n))));
+				tabla_container.className = "tablas";
+				desplegable = create_node("div", tabla_container);
 				desplegable.className = "desplegable";
 				document.getElementById("ejercicio5").appendChild(desplegable);
 				show_node(desplegable);
