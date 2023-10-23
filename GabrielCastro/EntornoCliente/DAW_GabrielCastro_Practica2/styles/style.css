@@ -83,6 +83,21 @@ section {
 	border-radius: 5px;
 }
 
+.btn-red {
+	background-color: red;
+	font-weight: bold;
+}
+
+.btn-blue {
+	background-color: blue;
+	font-weight: bold;
+}
+
+.btn-green {
+	background-color: green;
+	font-weight: bold;
+}
+
 .ejercicio {
 	padding: 5px;
 }
