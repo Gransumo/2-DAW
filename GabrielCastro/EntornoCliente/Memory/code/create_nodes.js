@@ -21,8 +21,8 @@ const imagenes = {
 
 function get_imgArray(len) {
 	var random_keys = [];
-	var IMGS_KEYS = Object.keys(imagenes);
-	for (let i = 0; i < len / 2; i++) {
+	const IMGS_KEYS = Object.keys(imagenes);
+	for (let i = 0; i < len; i++) {
 		let img_key;
 		do {
 			img_key = IMGS_KEYS[Math.floor(Math.random() * 18)];

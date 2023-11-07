@@ -131,6 +131,12 @@ main {
 .cell a img {
 	max-height: 100%;
 	width: auto;
+	transform-style: preserve-3d;
+	transition: 3s;
+}
+
+.fliped {
+	transform: rotateY(180deg);
 }
 
 .list_container ul {
