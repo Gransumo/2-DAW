@@ -1,0 +1,31 @@
+
+footer {
+	color: #ffffff65;
+	text-align: center;
+}
+
+.footer-content {
+	color: #ffffff65;
+	border-top: 1pt solid #3C3C3C;
+	padding: 10px;
+
+}
+
+.contacto {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.social {
+	color: #ffffff65;
+}
+
+.social:hover {
+	color: #fff;
+}
